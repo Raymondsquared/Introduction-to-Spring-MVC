@@ -19,6 +19,7 @@ public class MinutesController
 	public String addMinutes(@ModelAttribute ("exercise") Exercise exercise)
 	{
 		System.out.println("exercise : " + exercise.getMinutes());
+		System.out.println("exercise activity : " + exercise.getActivity());
 		
 		//return "forward:addMoreMinutes.html";
 		//return "redirect:addMoreMinutes.html";
@@ -46,7 +47,7 @@ public class MinutesController
 		
 		Activity bike = new Activity();
 		bike.setDesc("Bike");
-		activities.add(bike);
+		 activities.add(bike);
 		
 		Activity swim = new Activity();
 		swim.setDesc("Swim");
